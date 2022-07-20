@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/UserInterface.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <title>UserInterface</title>
+</head>
+<body>
+
+
+    <div class="back-image">
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <i id="burgur" class="fas fa-bars"></i>
+                    <ul class="ul">
+                        <li class="li"><a class="a" href="#">Home</a></li>
+                        <li class="li"><a class="a" href="#levels-section">levels</a></li>
+                        <li class="li"><a class="a" href="#">Statiques</a></li>
+                        <li class="li"><a class="a" href="#">About us</a></li>
+                        <li class="li"><a class="a" href="#">Contact us</a></li>
+                    </ul>
+                    <div class="action">
+                        <div class="profile" onclick="menuToggle();">
+                          <img src="images/user.png" />
+                        </div>
+                        <div class="menu">
+                          <ul>
+                            <li>
+                            <a href="#">My profile</a>
+                            </li>
+                            <li>
+                            <a href="#">Edit profile</a>
+                            </li>
+                            <li>
+                            <a href="#">Logout</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="hero-section">
+            <div class="container">
+                <div class="flex">
+                    <div class="card">
+                        <div>
+                            <h1>Hello User</h1>
+                            <p>Here we gonna help you to study fast and make your semester mbl3 !</p>
+                            <button class="btn-hover btn color-1"> Start </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/side-image.svg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="levels-section">
+        <div class="container">
+            <div class="card-section">
+                <a class="card card-hover color-1">
+                    <h3>Licence 1ére année - L1</h3>
+                    <span>
+                        8  Spacialités
+                    </span>
+                    <!-- <button class="btn-hover btn color-1">Download</button> -->
+                </a>
+                <a class="card card-hover color-1">
+                    <h3>Licence 2ème année - L2</h3>
+                    <span>
+                        1 Spacialités                   
+                    </span>
+                    <!-- <button class="btn-hover btn color-1">Download</button> -->
+                </a>
+                <a class="card card-hover color-1">
+                    <h3>Licence 3ème année - L3</h3>
+                    <span>
+                        12 Spacialités                    
+                    </span>
+                    <!-- <button class="btn-hover btn color-1">Download</button> -->
+                </a>
+                <a class="card card-hover color-1">
+                    <h3>Master 1ére année - M1</h3>
+                    <span>
+                          111  Spacialités
+                    </span>
+                    <!-- <button class="btn-hover btn color-1">Download</button> -->
+                </a>
+                <a class="card card-hover color-1">
+                    <h3>Master 2ème année - M2</h3>
+                    <span>
+                          106  Spacialités
+                    </span>
+                    <!-- <button class="btn-hover btn color-1">Download</button> -->
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <h3>&copy; 2022 |  	 MLT &trade; </h3>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function menuToggle() {
+          const toggleMenu = document.querySelector(".menu");
+          toggleMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
